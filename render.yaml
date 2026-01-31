@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-nutricare-backend
+    env: python
+    plan: free
+    branch: Kriti-AI-NutriCare
+    rootDir: Milestone_4/backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    pythonVersion: 3.10.13
