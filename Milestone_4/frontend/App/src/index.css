@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide number input spinners */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Organic blob morphing animation */
+@keyframes blob-morph {
+
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: rotate(0deg) scale(1);
+  }
+
+  25% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    transform: rotate(5deg) scale(1.05);
+  }
+
+  50% {
+    border-radius: 50% 60% 30% 60% / 30% 60% 70% 40%;
+    transform: rotate(-5deg) scale(0.95);
+  }
+
+  75% {
+    border-radius: 60% 40% 60% 40% / 70% 30% 50% 60%;
+    transform: rotate(3deg) scale(1.02);
+  }
+}
+
+/* Floating animation for smaller blobs */
+@keyframes blob-float {
+
+  0%,
+  100% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+
+  33% {
+    transform: translateY(-30px) translateX(15px) rotate(5deg);
+  }
+
+  66% {
+    transform: translateY(20px) translateX(-10px) rotate(-3deg);
+  }
+}
+
+/* ===================================
+   Theme-Aware Animated Background
+   =================================== */
+
+/* Gradient Background Container */
+.gradient-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* Ensures it sits above the base gradient (-10) but below content */
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* === 1. VISUAL SPHERE (Inner) === */
+/* Defines the look and the float animation */
+.gradient-sphere-visual {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: blur(40px);
+  /* Changed from 60px to 40px for more definition */
+}
+
+/* Add Float Animations to the VISUAL part only */
+.sphere-anim-1 {
+  animation: float-1 15s ease-in-out infinite alternate;
+}
+
+.sphere-anim-2 {
+  animation: float-2 18s ease-in-out infinite alternate;
+}
+
+.sphere-anim-3 {
+  animation: float-3 20s ease-in-out infinite alternate;
+}
+
+/* === 2. POSITION WRAPPERS (Outer) === */
+/* Defines the size and starting position. JS moves THIS element. */
+.sphere-pos-1 {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  top: -10%;
+  left: -10%;
+}
+
+.sphere-pos-2 {
+  position: absolute;
+  width: 45vw;
+  height: 45vw;
+  bottom: -20%;
+  right: -10%;
+}
+
+.sphere-pos-3 {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  top: 60%;
+  left: 20%;
+}
+
+
+/* Light Mode Sphere Colors - Cool-to-Violet Palette */
+.light-sphere-1 {
+  background: linear-gradient(40deg, hsla(211, 96%, 62%, 0.6), hsla(295, 94%, 76%, 0.5));
+}
+
+.light-sphere-2 {
+  /* Warm amber-to-terracotta accent */
+  background: linear-gradient(240deg, hsla(51, 89%, 61%, 0.6), hsla(25, 83%, 57%, 0.5));
+}
+
+.light-sphere-3 {
+  background: linear-gradient(120deg, hsla(211, 96%, 62%, 0.5), hsla(295, 94%, 76%, 0.4));
+}
+
+.dark-sphere-1 {
+  background: linear-gradient(40deg, hsla(211, 96%, 62%, 0.6), hsla(295, 94%, 76%, 0.4));
+}
+
+.dark-sphere-2 {
+  /* Warm amber-to-terracotta accent */
+  background: linear-gradient(240deg, hsla(51, 89%, 61%, 0.6), hsla(25, 83%, 57%, 0.4));
+}
+
+.dark-sphere-3 {
+  background: linear-gradient(120deg, hsla(211, 96%, 62%, 0.4), hsla(295, 94%, 76%, 0.25));
+}
+
+/* Grid Overlay */
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 40px 40px;
+  z-index: 2;
+}
+
+.light-grid {
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+}
+
+.dark-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Central Glow Effect */
+.glow {
+  position: absolute;
+  width: 40vw;
+  height: 40vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: pulse 8s infinite alternate;
+  filter: blur(30px);
+}
+
+.light-glow {
+  background: radial-gradient(circle, hsla(211, 96%, 62%, 0.15), transparent 70%);
+}
+
+.dark-glow {
+  background: radial-gradient(circle, hsla(295, 94%, 76%, 0.2), transparent 70%);
+}
+
+/* Noise Overlay */
+.noise-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.light-noise {
+  opacity: 0.08;
+}
+
+.dark-noise {
+  opacity: 0.05;
+}
+
+/* Particles Container */
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Individual Particles */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Float Animations */
+@keyframes float-1 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(10%, 10%) scale(1.1);
+  }
+}
+
+@keyframes float-2 {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(-10%, -5%) scale(1.15);
+  }
+}
+
+@keyframes float-3 {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translate(-5%, 10%) scale(1.05);
+    opacity: 0.6;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+/* Body Theme Classes */
+body.light-mode {
+  background-color: #f8fafc;
+  /* slate-50 */
+  color: #1e293b;
+  /* slate-800 */
+}
+
+body.dark-mode {
+  background-color: #0a0f1a;
+  color: white;
+}

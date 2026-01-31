@@ -1,0 +1,97 @@
+{
+    "patient_id": 1,
+    "data_extraction": {
+        "extracted_vitals": {
+            "Glucose": 157.07,
+            "WBC": 10570.0,
+            "Potassium": 4.9,
+            "Sodium": 143.0,
+            "pH": 6.0,
+            "Creatinine": 25.0,
+            "Cholesterol": 189.0,
+            "Hemoglobin": 14.5
+        },
+        "demographics": {
+            "age": 41
+        },
+        "used_defaults": [
+            "HR",
+            "MAP",
+            "Resp_Rate",
+            "Temp",
+            "SpO2",
+            "gcs",
+            "mean_bun",
+            "mean_wbc",
+            "mean_lactate",
+            "mean_ph",
+            "mean_cholesterol_total",
+            "total_fluids",
+            "vasopressor_x",
+            "sedative_x",
+            "antibiotic_x",
+            "insulin_x",
+            "mean_hourly_urine"
+        ]
+    },
+    "icu_prediction": {
+        "prediction": "Long Stay",
+        "risk_level": "High",
+        "confidence": 0.5745366811752319,
+        "clinical_meaning": "Patient has high risk of prolonged ICU stay and requires intensive nutritional support"
+    },
+    "clinical_interpretation": {
+        "clinical_findings": {
+            "Glucose": {
+                "value": 157.07,
+                "status": "Hyperglycemia",
+                "interpretation": "Elevated blood glucose indicating diabetes risk"
+            },
+            "Potassium": {
+                "value": 4.9,
+                "status": "Normal",
+                "interpretation": "Potassium is within normal range"
+            },
+            "Sodium": {
+                "value": 143.0,
+                "status": "Normal",
+                "interpretation": "Sodium is within normal range"
+            },
+            "pH": {
+                "value": 6.0,
+                "status": "Acidosis",
+                "interpretation": "Acidic blood pH indicating metabolic acidosis"
+            },
+            "Creatinine": {
+                "value": 25.0,
+                "status": "Renal impairment",
+                "interpretation": "Elevated creatinine indicating reduced kidney function"
+            },
+            "Cholesterol": {
+                "value": 189.0,
+                "status": "Normal",
+                "interpretation": "Cholesterol is within normal range"
+            },
+            "Hemoglobin": {
+                "value": 14.5,
+                "status": "Normal",
+                "interpretation": "Hemoglobin is within normal range"
+            }
+        },
+        "diet_constraints": [
+            "low_protein",
+            "low_sodium",
+            "low_sugar",
+            "renal",
+            "soft_diet"
+        ],
+        "dietary_objectives": [
+            "Control blood glucose levels",
+            "Reduce kidney workload",
+            "Support acid-base balance"
+        ],
+        "notes_for_llm": [
+            "Diet should avoid fried, spicy, and metabolically stressful foods"
+        ]
+    }
+}

@@ -1,0 +1,156 @@
+{
+    "Day 1": {
+        "Breakfast": {
+            "meal": "Moong Dal Cheela with Steamed Vegetables",
+            "description": "2 small moong dal cheelas (made with low-sodium spices) served with a mix of steamed carrots, green beans, and spinach."
+        },
+        "Snack": {
+            "meal": "Buttermilk",
+            "description": "1 cup of homemade buttermilk (unsweetened and low-sodium)."
+        },
+        "Lunch": {
+            "meal": "Vegetable Khichdi with Brown Rice",
+            "description": "1 cup cooked khichdi made with brown rice, moong dal, and low-sodium vegetables like carrots, peas, and cauliflower. Served with a dollop of low-fat curd."
+        },
+        "Evening": {
+            "meal": "Apple slices with cinnamon",
+            "description": "1 medium apple, sliced, sprinkled with a pinch of cinnamon."
+        },
+        "Dinner": {
+            "meal": "Mashed Sweet Potato with Palak Paneer",
+            "description": "1/2 cup mashed sweet potato (cooked without added sugar) served with 1/2 cup palak paneer (made with low-sodium paneer and spinach)."
+        }
+    },
+    "Day 2": {
+        "Breakfast": {
+            "meal": "Moong Dal Cheela with Steamed Vegetables",
+            "description": "2 small moong dal cheelas (made with low-sodium spices) served with a mix of steamed carrots, green beans, and spinach."
+        },
+        "Snack": {
+            "meal": "Buttermilk with a pinch of roasted cumin powder",
+            "description": "1 cup of homemade buttermilk (low-fat) with a sprinkle of roasted cumin powder for flavor."
+        },
+        "Lunch": {
+            "meal": "Vegetable Khichdi with Raita",
+            "description": "1 cup cooked vegetable khichdi (made with brown rice and moong dal, low-sodium spices) served with 1/2 cup plain raita (yogurt with cucumber and mint)."
+        },
+        "Evening": {
+            "meal": "Apple slices with a sprinkle of cinnamon",
+            "description": "1 medium apple, sliced, with a pinch of cinnamon for sweetness."
+        },
+        "Dinner": {
+            "meal": "Mashed Sweet Potato with Steamed Broccoli",
+            "description": "1 cup mashed sweet potato (cooked without added sugar or salt) served with 1 cup steamed broccoli florets."
+        }
+    },
+    "Day 3": {
+        "Breakfast": {
+            "meal": "Moong Dal Cheela with Steamed Vegetable",
+            "description": "2 small moong dal cheelas made with low-sodium spices, served with a mix of steamed carrots, broccoli, and green beans."
+        },
+        "Snack": {
+            "meal": "Buttermilk with a pinch of roasted cumin powder",
+            "description": "1 cup low-fat buttermilk seasoned with a pinch of roasted cumin powder."
+        },
+        "Lunch": {
+            "meal": "Masoor Dal Khichdi with Cucumber Raita",
+            "description": "1 cup cooked masoor dal khichdi with brown rice, lightly spiced with turmeric and ginger. Served with 1/2 cup cucumber raita made with low-fat yogurt."
+        },
+        "Evening": {
+            "meal": "Sprouts Salad with Lemon Dressing",
+            "description": "A mixed salad of sprouted moong beans, chickpeas, and lentils, dressed with a squeeze of lemon juice and a sprinkle of chopped coriander."
+        },
+        "Dinner": {
+            "meal": "Vegetable Pulao with Steamed Fish",
+            "description": "1 cup vegetable pulao made with brown rice, mixed vegetables (avoiding high potassium vegetables), and low-sodium spices. Served with 100g steamed fish."
+        }
+    },
+    "Day 4": {
+        "Breakfast": {
+            "meal": "Moong Dal Cheela with Steamed Vegetables",
+            "description": "2 small moong dal cheelas (made with low-sodium spices) served with a mix of steamed carrots, green beans, and spinach."
+        },
+        "Snack": {
+            "meal": "Buttermilk with a pinch of roasted cumin powder",
+            "description": "1 cup of low-fat buttermilk seasoned with a pinch of roasted cumin powder."
+        },
+        "Lunch": {
+            "meal": "Masoor Dal Khichdi with Cucumber Raita",
+            "description": "1 cup of Masoor Dal Khichdi (made with brown rice and lentils) served with 1/2 cup of cucumber raita (yogurt with cucumber and mint)."
+        },
+        "Evening": {
+            "meal": "Baked Apple with Cinnamon",
+            "description": "1/2 baked apple sprinkled with a pinch of cinnamon."
+        },
+        "Dinner": {
+            "meal": "Vegetable Pulao with Steamed Fish",
+            "description": "1 cup of vegetable pulao (made with brown rice and low-sodium spices) served with 100 grams of steamed fish."
+        }
+    },
+    "Day 5": {
+        "Breakfast": {
+            "meal": "Moong Dal Cheela with Steamed Vegetables",
+            "description": "2 small moong dal cheelas made with low sodium spices, served with a mix of steamed carrots, green beans, and spinach."
+        },
+        "Snack": {
+            "meal": "Buttermilk with a pinch of roasted cumin powder",
+            "description": "1 cup low-fat buttermilk with a sprinkle of roasted cumin powder for flavor."
+        },
+        "Lunch": {
+            "meal": "Vegetable Khichdi with Brown Rice",
+            "description": "1 cup cooked vegetable khichdi made with brown rice, moong dal, and low sodium spices. Served with a dollop of plain yogurt."
+        },
+        "Evening": {
+            "meal": "Apple slices with a sprinkle of cinnamon",
+            "description": "1 medium apple, sliced and sprinkled with a pinch of cinnamon."
+        },
+        "Dinner": {
+            "meal": "Mashed Sweet Potato with Palak Paneer",
+            "description": "1/2 cup mashed sweet potato seasoned with a touch of turmeric and ginger. Served with 1/2 cup palak paneer made with low-fat paneer and minimal oil."
+        }
+    },
+    "Day 6": {
+        "Breakfast": {
+            "meal": "Moong Dal Cheela with Steamed Vegetables",
+            "description": "2 small moong dal cheelas (made with low-sodium spices) served with a mix of steamed carrots, spinach, and cauliflower."
+        },
+        "Snack": {
+            "meal": "Buttermilk with a pinch of roasted cumin powder",
+            "description": "1 cup low-fat buttermilk seasoned with a pinch of roasted cumin powder."
+        },
+        "Lunch": {
+            "meal": "Masoor Dal Khichdi with Vegetable Raita",
+            "description": "1 cup cooked masoor dal khichdi (made with brown rice and low-sodium spices) served with a cup of vegetable raita (yogurt with finely chopped cucumber, tomato, and coriander)."
+        },
+        "Evening": {
+            "meal": "Apple slices with a sprinkle of cinnamon",
+            "description": "1 medium apple, sliced, and sprinkled with a pinch of cinnamon."
+        },
+        "Dinner": {
+            "meal": "Vegetable Pulao with Steamed Fish",
+            "description": "1 cup vegetable pulao (made with brown rice, low-sodium spices, and mixed vegetables) served with 100 grams of steamed fish (choose a low-mercury option)."
+        }
+    },
+    "Day 7": {
+        "Breakfast": {
+            "meal": "Moong Dal Cheela with Steamed Vegetables",
+            "description": "2 small moong dal cheelas (made with low-sodium spices) served with a mix of steamed carrots, spinach, and cauliflower."
+        },
+        "Snack": {
+            "meal": "Buttermilk with a pinch of roasted cumin powder",
+            "description": "1 cup low-fat buttermilk seasoned with a pinch of roasted cumin powder."
+        },
+        "Lunch": {
+            "meal": "Vegetable Khichdi with Raita",
+            "description": "1 bowl khichdi made with brown rice, moong dal, and low-sodium vegetables like peas, carrots, and beans. Served with a small serving of plain yogurt (raita) with chopped cucumber and coriander."
+        },
+        "Evening": {
+            "meal": "Apple slices with a sprinkle of cinnamon",
+            "description": "1 medium apple, sliced and sprinkled with a pinch of cinnamon."
+        },
+        "Dinner": {
+            "meal": "Mashed Sweet Potato with Palak Paneer",
+            "description": "1/2 cup mashed sweet potato (avoid adding sugar) served with 1/2 cup palak paneer (made with low-fat paneer and minimal oil)."
+        }
+    }
+}

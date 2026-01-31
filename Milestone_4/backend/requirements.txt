@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+tensorflow
+joblib
+numpy
+pandas
+pdfplumber
+pytesseract
+camelot-py
+pdf2image
+reportlab
+openai
