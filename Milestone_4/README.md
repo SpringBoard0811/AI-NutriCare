@@ -7,6 +7,7 @@ The focus of this milestone is **full-stack integration**, **secure backend APIs
 
 
 ## 📁 Folder Structure
+```
 Milestone_4/
 │
 ├── backend/
@@ -28,7 +29,7 @@ Milestone_4/
 ├── index.html
 ├── package.json
 └── vite.config.js
-
+```
 
 
 ## 🔹 Backend (FastAPI)
