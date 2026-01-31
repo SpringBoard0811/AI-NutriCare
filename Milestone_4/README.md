@@ -4,7 +4,7 @@
 This repository contains the **Frontend and Backend implementation** for **Milestone 4** of the **AI NutriCare** project.  
 The focus of this milestone is **full-stack integration**, **secure backend APIs**, and a **functional frontend dashboard**.
 
----
+
 
 ## 📁 Folder Structure
 Milestone_4/
@@ -29,7 +29,7 @@ Milestone_4/
 ├── package.json
 └── vite.config.js
 
----
+
 
 ## 🔹 Backend (FastAPI)
 
