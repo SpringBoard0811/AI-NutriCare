@@ -10,4 +10,5 @@ camelot-py
 pdf2image
 reportlab
 openai
+scikit-learn
 python-multipart
