@@ -1,7 +1,8 @@
-// App.jsx - PRODUCTION ENHANCED VERSION with Medication Management & Auth
+
 import { useState, useEffect } from "react";
 import "./App.css";
 import back1 from "./assets/back1.png";
+const API_BASE_URL = "https://ai-nutricare-backend.onrender.com";
 
 const SLIDES = [
   { bg: back1, title: "NutriCare AI", tag: "Clinical-Grade ICU Nutrition Intelligence", em: "Evidence-based nutrition meets AI precision 🏥" },
@@ -288,7 +289,7 @@ export default function App() {
       const constraints = backendResponse?.clinical_interpretation?.diet_constraints || [];
       const objectives = backendResponse?.clinical_interpretation?.dietary_objectives || [];
       
-      const response = await fetch("http://localhost:8000/alternatives", {
+      const response = await fetch(`${API_BASE_URL}/alternatives`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -319,7 +320,7 @@ export default function App() {
     showNotificationMsg("Generating comprehensive PDF report... 📄");
     
     try {
-      const response = await fetch("http://localhost:8000/generate-report", {
+      const response = await fetch(`${API_BASE_URL}/generate-report`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -332,7 +333,7 @@ export default function App() {
         const data = await response.json();
         
         // Download the file
-        const downloadResponse = await fetch(`http://localhost:8000/download-report/${data.filename}`);
+        const downloadResponse = await fetch(`${API_BASE_URL}/download-report/${data.filename}`);
         const blob = await downloadResponse.blob();
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
@@ -381,7 +382,7 @@ export default function App() {
         
         showNotificationMsg("AI analyzing PDF... 🔍");
         
-        response = await fetch("http://localhost:8000/predict/pdf", {
+        response = await fetch(`${API_BASE_URL}/predict/pdf`, {
           method: "POST",
           body: formData,
         });
@@ -395,7 +396,7 @@ export default function App() {
         
         showNotificationMsg("AI processing data... 🤖");
         
-        response = await fetch("http://localhost:8000/predict/manual", {
+        response = await fetch(`${API_BASE_URL}/predict/manual`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
