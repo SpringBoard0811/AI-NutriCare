@@ -92,3 +92,51 @@ Train a **leakage-free LSTM model** to predict whether a patient will experience
 - Generated severity-aware outputs used for **diet recommendation logic**
 - Exported final test evaluations to **PDF format**
 ---
+## 🧠 Milestone-3: Backend System & Clinical Logic
+
+### 🔹 Objective
+Expose the trained ML pipeline through a **robust backend API** capable of handling clinical inputs safely and reliably.
+
+### 🔹 Key Work
+- Built a **FastAPI-based backend**
+- Implemented:
+  - Clinical input validation
+  - ICU vitals normalization
+  - Severity-aware diet generation logic
+- Integrated **LSTM model inference** for severity prediction
+- Supported:
+  - Manual patient data entry
+  - PDF medical report parsing
+- Deployed backend using **Render**
+
+---
+
+## 🌐 Milestone-4: Full-Stack Clinical Application (Final)
+
+### 🔹 Objective
+Deliver a **complete, end-to-end AI healthcare application** usable by clinicians or healthcare staff.
+
+### 🔹 Key Features
+- Interactive frontend built with **React + Vite**
+- Manual patient intake form
+- Automated extraction of:
+  - Name
+  - Age / DOB
+  - Demographics
+  - Clinical vitals
+- Real-time backend API integration
+- Severity-driven **personalized diet plans**
+- Clean, responsive clinical UI
+
+---
+
+## 🚀 Deployment
+
+- **Frontend:** Deployed on **Vercel**
+- **Backend:** Deployed on **Render**
+
+🔗 **Live Application:**  
+👉 https://ai-nutricare-frontend.vercel.app  
+*(replace with your exact Vercel URL if slightly different)*
+
+---
