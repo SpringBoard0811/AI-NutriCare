@@ -136,7 +136,7 @@ Deliver a **complete, end-to-end AI healthcare application** usable by clinician
 - **Backend:** Deployed on **Render**
 
 🔗 **Live Application:**  
-👉 https://ai-nutricare-frontend.vercel.app  
+👉 [https://ai-nutricare-frontend.vercel.app](https://dietplan-pearl.vercel.app/)  
 *(replace with your exact Vercel URL if slightly different)*
 
 ---
