@@ -10,3 +10,4 @@ camelot-py
 pdf2image
 reportlab
 openai
+python-multipart
